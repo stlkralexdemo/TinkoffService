@@ -1,0 +1,18 @@
+package ru.itpark;
+
+public class CashbackService {
+    public int CalculateCashback(int totalAmountOne, int totalAmountTwo, int totalAmountThree) {
+
+        int result;
+        int percentOneCategory = 1;
+        int percentTwoCategory = 2;
+        int percentThreeCategory = 3;
+        int maxCashback = 3000;
+
+        result = (totalAmountOne * percentOneCategory + totalAmountTwo * percentTwoCategory + totalAmountThree * percentThreeCategory) / 100;
+        if (result > maxCashback) {
+            result = maxCashback;
+        }
+        return result;
+    }
+}
