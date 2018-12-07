@@ -1,7 +1,7 @@
 package ru.itpark;
 
 public class CashbackService {
-    public int CalculateCashback(int totalAmountOne, int totalAmountTwo, int totalAmountThree) {
+    public int calculateCashback(int totalAmountOne, int totalAmountTwo, int totalAmountThree) {
 
         int percentOneCategory = 1;
         int percentTwoCategory = 2;
